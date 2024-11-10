@@ -1,0 +1,172 @@
+/* Layout */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #23252C;
+  color: var(--color-white);
+  justify-content: center;
+}
+
+/* Custom Properties */
+
+:root {
+  --color-white: #FFFFFF;
+  --color-light: #DCDCDC;
+}
+
+
+/* Components */
+
+#root {
+  max-width: 20em;
+  margin: 2em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+              0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+              0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #1A1B21;
+}
+
+.container {
+  padding: 0 2.2em 2.5em;
+}
+
+
+/* Font */
+
+p {
+  font-size: 0.64rem;
+  color: var(--color-light);
+}
+
+p,
+.about--title,
+.interests--title {
+  line-height: 150%;
+}
+
+
+/* Flex Layout */
+
+body,
+.info--btn-wrapper,
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Information */
+
+.info--wrapper {
+  text-align: center;
+}
+
+.info--photo {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  width: 20em;
+}
+
+.info--name {
+  margin: 0.8em 0 0.1em;
+  font-size: 1.8rem;
+}
+
+.info--job-title {
+  color: #F3BF99;
+  margin: 0 0 0.8em;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.info--website {
+  margin: 0 0 2em;
+}
+
+.info--website-link {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+
+/* Info Buttons */
+
+.info--btn-wrapper {
+  justify-content: space-between;
+  padding: 0 2.2em;
+}
+
+.info--btn {
+  min-width: 8em;
+  font-size: 0.875rem;
+  padding: 0.56em 0.68em;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn--icon {
+  margin-right: 0.56em;
+}
+
+.btn--email {
+  background-color: var(--color-white);
+  border: 1px solid #D1D5DB;
+}
+
+.btn--linkedin {
+  color: var(--color-white);
+  background-color: #5093E2;
+  border: 1px solid #5093E2;
+}
+
+
+/* About & Interests */
+
+.about,
+.interests {
+  margin-top: 2em;
+}
+
+.about--title,
+.interests--title {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+
+/* Footer */
+
+.footer {
+  justify-content: space-evenly;
+  padding: 1em 2em;
+  background-color: #161619;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.footer--icon {
+  height: 30px;
+  color: #918E9B;
+  cursor: pointer;
+}
+
+
+/* Hover */
+
+.info--btn:hover,
+.footer--icon:hover {
+  transform: scale(1.1)
+}
+
+.footer--icon:hover {
+  color: var(--color-light);
+}
